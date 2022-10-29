@@ -1,0 +1,31 @@
+--// UI Lib
+
+local UILib = loadstring(game:HttpGet('https://raw.githubusercontent.com/inceldom/kinx/main/ui'))()
+
+local win = UILib:Window("Own Text",Color3.fromRGB(44, 120, 224), Enum.KeyCode.RightControl)
+
+--// Sections
+
+local MainSection = win:Tab("Own Here")
+
+--// Slider
+
+MainSection:Slider("Own Text",min,max,defult, function(t)
+	print(t)
+end)
+
+--// Toggle
+
+MainSection:Toggle("Own Text",false, function(t)
+    print(t)
+end)
+
+--// Button
+
+MainSection:Button("Own Text", function()
+    print(t)
+end)
+
+--// Notification
+
+UILib:Notification("Notification",)
